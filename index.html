@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>AI Touchless Control</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/@mediapipe/hands/hands.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@mediapipe/camera_utils/camera_utils.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@mediapipe/drawing_utils/drawing_utils.js"></script>
+</head>
+<body>
+
+  <div class="navbar">
+    <h1>AI Touchless Control System</h1>
+  </div>
+
+  <div class="container">
+    <div class="video-section">
+      <video class="input_video"></video>
+      <canvas class="output_canvas"></canvas>
+      <div class="cursor-dot" id="cursor"></div>
+    </div>
+
+    <div class="info-panel">
+      <h2>Status</h2>
+      <p id="gestureStatus">Waiting for gesture...</p>
+      <button onclick="startCamera()">Start Camera</button>
+    </div>
+  </div>
+
+<script src="script.js"></script>
+</body>
+</html>
